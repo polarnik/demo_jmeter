@@ -1,0 +1,39 @@
+2020-10-11 17:21:16,573 INFO o.a.j.u.JMeterUtils: Setting Locale to ru_RU
+2020-10-11 17:21:16,595 ERROR o.a.j.u.JMeterUtils: Could not find resources for 'ru_RU'
+2020-10-11 17:21:16,596 INFO o.a.j.JMeter: Loading user properties from: /data/data/Project/qa_load_lerning/apache-jmeter-5.3/bin/user.properties
+2020-10-11 17:21:16,597 INFO o.a.j.JMeter: Loading system properties from: /data/data/Project/qa_load_lerning/apache-jmeter-5.3/bin/system.properties
+2020-10-11 17:21:16,599 INFO o.a.j.JMeter: Copyright (c) 1998-2020 The Apache Software Foundation
+2020-10-11 17:21:16,599 INFO o.a.j.JMeter: Version 5.3
+2020-10-11 17:21:16,599 INFO o.a.j.JMeter: java.version=1.8.0_181
+2020-10-11 17:21:16,600 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2020-10-11 17:21:16,600 INFO o.a.j.JMeter: os.name=Linux
+2020-10-11 17:21:16,600 INFO o.a.j.JMeter: os.arch=amd64
+2020-10-11 17:21:16,600 INFO o.a.j.JMeter: os.version=4.15.0-112-generic
+2020-10-11 17:21:16,600 INFO o.a.j.JMeter: file.encoding=UTF-8
+2020-10-11 17:21:16,600 INFO o.a.j.JMeter: java.awt.headless=null
+2020-10-11 17:21:16,601 INFO o.a.j.JMeter: Max memory     =3707764736
+2020-10-11 17:21:16,601 INFO o.a.j.JMeter: Available Processors =4
+2020-10-11 17:21:16,610 INFO o.a.j.JMeter: Default Locale=русский (Россия)
+2020-10-11 17:21:16,611 INFO o.a.j.JMeter: JMeter  Locale=русский (Россия)
+2020-10-11 17:21:16,611 INFO o.a.j.JMeter: JMeterHome=/data/data/Project/qa_load_lerning/apache-jmeter-5.3
+2020-10-11 17:21:16,611 INFO o.a.j.JMeter: user.dir  =/data/data/Project/qa_load_lerning/demo_jmeter
+2020-10-11 17:21:16,612 INFO o.a.j.JMeter: PWD       =/data/data/Project/qa_load_lerning/demo_jmeter
+2020-10-11 17:21:16,623 INFO o.a.j.JMeter: IP: 192.168.1.68 Name: macbook-pro FullName: macbook-pro
+2020-10-11 17:21:16,812 INFO o.a.j.JMeter: Setting LAF to: laf:javax.swing.plaf.metal.MetalLookAndFeel
+2020-10-11 17:21:16,972 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2020-10-11 17:21:19,510 INFO o.j.r.JARSourceHTTP: Found cached repo
+2020-10-11 17:21:20,073 INFO o.a.j.JMeter: Loading file: ./01.main.jmx
+2020-10-11 17:21:20,083 INFO o.a.j.s.FileServer: Default base='/data/data/Project/qa_load_lerning/demo_jmeter'
+2020-10-11 17:21:20,085 INFO o.a.j.s.FileServer: Set new base='/data/data/Project/qa_load_lerning/demo_jmeter/.'
+2020-10-11 17:21:20,237 INFO o.j.r.PluginManager: Plugins Status: [blazemeter-debugger=0.6, jpgc-plugins-manager=1.4, jmeter-core=5.3, jmeter-ftp=5.3, jmeter-http=5.3, jmeter-jdbc=5.3, jmeter-jms=5.3, jmeter-junit=5.3, jmeter-java=5.3, jmeter-ldap=5.3, jmeter-mail=5.3, jmeter-mongodb=5.3, jmeter-native=5.3, jmeter-tcp=5.3, jmeter-components=5.3]
+2020-10-11 17:21:20,707 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-10-11 17:21:20,773 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-10-11 17:21:20,775 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-10-11 17:21:20,783 INFO o.a.j.s.SaveService: Loading file: ./01.main.jmx
+2020-10-11 17:21:21,155 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-11 17:21:21,156 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-11 17:21:21,156 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-11 17:21:21,156 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-11 17:21:21,156 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-10-11 17:21:21,156 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-10-11 17:21:21,530 INFO o.a.j.s.FileServer: Set new base='/data/data/Project/qa_load_lerning/demo_jmeter/.'
