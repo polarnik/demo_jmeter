@@ -17,8 +17,8 @@
         <influxdb.username>none</influxdb.username>
         <influxdb.password>none</influxdb.password>
 
-        <jmeter.maven.plugin.version>2.9.0</jmeter.maven.plugin.version>
-        <jmeter.version>5.1.1</jmeter.version>
+        <jmeter.maven.plugin.version>3.1.1</jmeter.maven.plugin.version>
+        <jmeter.version>5.3</jmeter.version>
     </properties>
 
     <licenses>
@@ -53,6 +53,32 @@
                 <artifactId>jmeter-maven-plugin</artifactId>
                 <version>${jmeter.maven.plugin.version}</version>
 
+                <executions>
+                    <!-- Generate JMeter configuration -->
+                    <execution>
+                        <id>configuration</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>configure</goal>
+                        </goals>
+                    </execution>
+                    <!-- Run JMeter tests -->
+                    <execution>
+                        <id>jmeter-tests</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>jmeter</goal>
+                        </goals>
+                    </execution>
+                    <!-- Fail build on errors in test -->
+                    <execution>
+                        <id>jmeter-check-results</id>
+                        <goals>
+                            <goal>results</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
                 <configuration>
                     <testFilesIncluded>
                         <jMeterTestFile>${jmx}.jmx</jMeterTestFile>
@@ -63,7 +89,7 @@
                         <!-- Custom Thread Groups
                         https://jmeter-plugins.org/?search=jpgc-casutg
 			            http://repo.maven.apache.org/maven2/kg/apc/jmeter-plugins-casutg/
-                        <artifact>kg.apc:jmeter-plugins-casutg:2.6</artifact>
+                        <artifact>kg.apc:jmeter-plugins-casutg:2.9</artifact>
 			            -->                        
                     </jmeterExtensions>
 
@@ -77,7 +103,7 @@
                     <downloadExtensionDependencies>false</downloadExtensionDependencies>
                     <downloadLibraryDependencies>false</downloadLibraryDependencies>
                     <downloadOptionalDependencies>false</downloadOptionalDependencies>
-                    <downloadJMeterDependencies>false</downloadJMeterDependencies>
+                    <downloadJMeterDependencies>true</downloadJMeterDependencies>
 
                     <propertiesUser>
                         <data.dir>${project.basedir}/src/test/jmeter/data</data.dir>
@@ -208,6 +234,20 @@
                 </plugins>
             </build>
         </profile>
+
+        <profile><id>jmeter-web.01</id><properties><jmx>jmeter-web.01</jmx></properties></profile>
+        <profile><id>jmeter-web.02</id><properties><jmx>jmeter-web.02</jmx></properties></profile>
+        <profile><id>jmeter-web.03</id><properties><jmx>jmeter-web.03</jmx></properties></profile>
+        <profile><id>jmeter-web.04</id><properties><jmx>jmeter-web.04</jmx></properties></profile>
+        <profile><id>jmeter-web.05</id><properties><jmx>jmeter-web.05</jmx></properties></profile>
+        <profile><id>jmeter-web.06</id><properties><jmx>jmeter-web.06</jmx></properties></profile>
+        <profile><id>jmeter-web.07</id><properties><jmx>jmeter-web.07</jmx></properties></profile>
+        <profile><id>jmeter-web.08</id><properties><jmx>jmeter-web.08</jmx></properties></profile>
+        <profile><id>jmeter-web.09</id><properties><jmx>jmeter-web.09</jmx></properties></profile>
+        <profile><id>jmeter-web.10</id><properties><jmx>jmeter-web.10</jmx></properties></profile>
+        <profile><id>jmeter-web.11</id><properties><jmx>jmeter-web.11</jmx></properties></profile>
+        <profile><id>jmeter-web.12</id><properties><jmx>jmeter-web.12</jmx></properties></profile>
+        <profile><id>jmeter-web.13</id><properties><jmx>jmeter-web.13</jmx></properties></profile>
 
     </profiles>
 </project>
